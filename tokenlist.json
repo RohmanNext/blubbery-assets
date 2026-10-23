@@ -1,0 +1,26 @@
+{
+  "name": "Blubbery Token List",
+  "logoURI": "https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png",
+  "keywords": [
+    "blubbery",
+    "blubb",
+    "base",
+    "meme"
+  ],
+  "timestamp": "2026-10-23T09:29:14.283Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 8453,
+      "address": "0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2",
+      "name": "Blubbery",
+      "symbol": "BLUBB",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png"
+    }
+  ]
+}
