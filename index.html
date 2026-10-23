@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blubbery ($BLUBB) - Add to MetaMask</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0b0f19; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; }
+    .card { background: #131b2e; border: 1px solid #1e293b; border-radius: 20px; padding: 36px; max-width: 440px; width: 100%; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    .logo { width: 128px; height: 128px; border-radius: 50%; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4); margin-bottom: 20px; }
+    h1 { margin: 0 0 8px; font-size: 26px; font-weight: 700; color: #60a5fa; }
+    p { color: #94a3b8; font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
+    .btn { background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; border: none; border-radius: 12px; padding: 14px 24px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: all 0.2s ease; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5); }
+    .status { margin-top: 16px; font-size: 14px; color: #10b981; min-height: 20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png" alt="Blubbery Logo" class="logo">
+    <h1>Blubbery ($BLUBB)</h1>
+    <p>Simpan $BLUBB ke MetaMask kamu lengkap dengan logo resmi!</p>
+    <button class="btn" id="addBtn">Tambahkan Logo & Token ke MetaMask</button>
+    <div class="status" id="status"></div>
+  </div>
+  <script>
+    document.getElementById('addBtn').addEventListener('click', async () => {
+      const statusEl = document.getElementById('status');
+      if (typeof window.ethereum !== 'undefined') {
+        try {
+          statusEl.textContent = 'Menghubungkan ke wallet...';
+          const wasAdded = await window.ethereum.request({
+            method: 'wallet_watchAsset',
+            params: {
+              type: 'ERC20',
+              options: {
+                address: '0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2',
+                symbol: 'BLUBB',
+                decimals: 18,
+                image: 'https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png',
+              },
+            },
+          });
+          if (wasAdded) {
+            statusEl.textContent = '🎉 Berhasil ditambahkan dengan logo!';
+          } else {
+            statusEl.textContent = 'Permintaan dibatalkan.';
+          }
+        } catch (err) {
+          statusEl.textContent = 'Error: ' + (err.message || 'Gagal menambahkan');
+        }
+      } else {
+        alert('MetaMask tidak terdeteksi di browser ini.');
+      }
+    });
+  </script>
+</body>
+</html>
