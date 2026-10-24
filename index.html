@@ -3,56 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blubbery ($BLUBB) - Add to MetaMask</title>
+  <title>Blubbery ($BLUBB) - Official Base Meme Token</title>
+  
+  <meta name="description" content="Official Blubbery ($BLUBB) on Base Mainnet. Audited by SolidityScan (89.24/100). Fixed supply, verified on-chain.">
+  <meta property="og:title" content="Blubbery ($BLUBB) - Base Mainnet">
+  <meta property="og:description" content="Too big to fail, too cute to ignore. Audited by SolidityScan (89.24/100). Low 3% tax, verified on-chain.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png">
+  <meta property="og:url" content="https://RohmanNext.github.io/blubbery-assets">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blubbery ($BLUBB) - Official Base Meme Token">
+  <meta name="twitter:description" content="Audited by SolidityScan (89.24/100). Live on Uniswap V3 Base.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png">
+
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0b0f19; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; }
-    .card { background: #131b2e; border: 1px solid #1e293b; border-radius: 20px; padding: 36px; max-width: 440px; width: 100%; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-    .logo { width: 128px; height: 128px; border-radius: 50%; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4); margin-bottom: 20px; }
-    h1 { margin: 0 0 8px; font-size: 26px; font-weight: 700; color: #60a5fa; }
-    p { color: #94a3b8; font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
-    .btn { background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: white; border: none; border-radius: 12px; padding: 14px 24px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: all 0.2s ease; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5); }
-    .status { margin-top: 16px; font-size: 14px; color: #10b981; min-height: 20px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #080c14; color: #f1f5f9; line-height: 1.6; }
+    .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+    .header { text-align: center; margin-bottom: 40px; }
+    .logo { width: 140px; height: 140px; border-radius: 50%; box-shadow: 0 0 30px rgba(59, 130, 246, 0.3); margin-bottom: 20px; }
+    h1 { font-size: 36px; font-weight: 800; color: #60a5fa; margin-bottom: 10px; }
+    .tagline { font-size: 18px; color: #94a3b8; max-width: 600px; margin: 0 auto 24px; }
+    .badge-container { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
+    .badge { background: #1e293b; border: 1px solid #334155; padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; color: #38bdf8; }
+    .badge.green { color: #4ade80; border-color: rgba(74, 222, 128, 0.3); }
+    .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 16px; padding: 24px; margin-bottom: 24px; }
+    .card h2 { font-size: 20px; color: #e2e8f0; margin-bottom: 16px; }
+    .ca-box { display: flex; align-items: center; justify-content: space-between; background: #020617; border: 1px solid #1e293b; border-radius: 8px; padding: 12px 16px; font-family: monospace; font-size: 14px; word-break: break-all; }
+    .btn-group { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+    .btn { display: inline-block; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; text-align: center; font-size: 15px; cursor: pointer; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.9; }
+    .btn-primary { background: #2563eb; color: #ffffff; }
+    .btn-secondary { background: #1e293b; color: #f8fafc; border: 1px solid #334155; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .metric { background: #020617; border: 1px solid #1e293b; border-radius: 12px; padding: 16px; }
+    .metric-label { font-size: 13px; color: #64748b; margin-bottom: 6px; }
+    .metric-val { font-size: 18px; font-weight: 700; color: #f8fafc; }
+    .footer { text-align: center; color: #64748b; font-size: 13px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #1e293b; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png" alt="Blubbery Logo" class="logo">
-    <h1>Blubbery ($BLUBB)</h1>
-    <p>Simpan $BLUBB ke MetaMask kamu lengkap dengan logo resmi!</p>
-    <button class="btn" id="addBtn">Tambahkan Logo & Token ke MetaMask</button>
-    <div class="status" id="status"></div>
+  <div class="container">
+    <div class="header">
+      <img src="https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png" alt="Blubbery Logo" class="logo">
+      <h1>Blubbery ($BLUBB)</h1>
+      <p class="tagline">Too big to fail, too cute to ignore. $BLUBB is here to swallow the dips and ride the massive green waves to the moon.</p>
+      <div class="badge-container">
+        <span class="badge green">SolidityScan Score: 89.24/100 (GREAT)</span>
+        <span class="badge green">0 Critical / 0 High Risks</span>
+        <span class="badge">Base Mainnet (8453)</span>
+      </div>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="https://app.uniswap.org/explore/tokens/base/0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2" target="_blank" class="btn btn-primary">Trade on Uniswap V3</a>
+        <a href="https://dexscreener.com/base/0x016d04e2a62840ED7A78943b1E46d7d418D4e3c8" target="_blank" class="btn btn-secondary">DexScreener Chart</a>
+        <a href="https://solidityscan.com/qs-report/827bdabae2855110aaab7c0990c750c1/f845120fc3e84213/94720df7e81c94a3" target="_blank" class="btn btn-secondary">Audit Certificate</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Contract Address</h2>
+      <div class="ca-box">
+        <span id="caText">0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2</span>
+        <button onclick="navigator.clipboard.writeText('0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2'); alert('Copied contract address');" style="background:#1e293b; border:1px solid #334155; color:#93c5fd; padding:6px 12px; border-radius:6px; cursor:pointer; font-size:12px; margin-left:12px;">Copy</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="metric">
+        <div class="metric-label">Total Supply</div>
+        <div class="metric-val">2,400,000,000 BLUBB</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Liquidity Pool</div>
+        <div class="metric-val">Uniswap V3 (96.5%)</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Transaction Fee</div>
+        <div class="metric-val">3% (Hard-capped)</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">Security Status</div>
+        <div class="metric-val" style="color:#4ade80;">Anti-Honeypot Active</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Official Trackers & Verified Sources</h2>
+      <div class="btn-group">
+        <a href="https://dexscreener.com/base/0x016d04e2a62840ED7A78943b1E46d7d418D4e3c8" target="_blank" class="btn btn-secondary">DexScreener</a>
+        <a href="https://www.geckoterminal.com/base/pools/0x016d04e2a62840ED7A78943b1E46d7d418D4e3c8" target="_blank" class="btn btn-secondary">GeckoTerminal</a>
+        <a href="https://basescan.org/token/0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2" target="_blank" class="btn btn-secondary">BaseScan Explorer</a>
+        <a href="https://solidityscan.com/qs-report/827bdabae2855110aaab7c0990c750c1/f845120fc3e84213/94720df7e81c94a3" target="_blank" class="btn btn-secondary">SolidityScan Report</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Blubbery ($BLUBB) &bull; Official Contact: blubbery.official@proton.me</p>
+    </div>
   </div>
-  <script>
-    document.getElementById('addBtn').addEventListener('click', async () => {
-      const statusEl = document.getElementById('status');
-      if (typeof window.ethereum !== 'undefined') {
-        try {
-          statusEl.textContent = 'Menghubungkan ke wallet...';
-          const wasAdded = await window.ethereum.request({
-            method: 'wallet_watchAsset',
-            params: {
-              type: 'ERC20',
-              options: {
-                address: '0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2',
-                symbol: 'BLUBB',
-                decimals: 18,
-                image: 'https://raw.githubusercontent.com/RohmanNext/blubbery-assets/main/logo.png',
-              },
-            },
-          });
-          if (wasAdded) {
-            statusEl.textContent = '🎉 Berhasil ditambahkan dengan logo!';
-          } else {
-            statusEl.textContent = 'Permintaan dibatalkan.';
-          }
-        } catch (err) {
-          statusEl.textContent = 'Error: ' + (err.message || 'Gagal menambahkan');
-        }
-      } else {
-        alert('MetaMask tidak terdeteksi di browser ini.');
-      }
-    });
-  </script>
 </body>
 </html>
