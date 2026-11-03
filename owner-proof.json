@@ -1,7 +1,7 @@
 {
   "contractAddress": "0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2",
   "ownerAddress": "0x6e7F2448a39f2E1FcbC03a3C9Dc30912a206d3F6",
-  "message": "Register Blubbery ($BLUBB) Token Info & Logo for 0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2 by Owner 0x6e7F2448a39f2E1FcbC03a3C9Dc30912a206d3F6 at timestamp 1793665235",
-  "signature": "0xe879db90b5c3cedc613cd809b39e98f92b60864fc59be5b01b82b037845aef217e433851b96c80f44cb4cf88a2aa067b22b486e8bbc0994b792becbf75101e871c",
-  "timestamp": 1793665235
+  "message": "Register Blubbery ($BLUBB) Token Info & Logo for 0x1e8bed0DDA548Ebc454f1F08BF50CE55A768a2b2 by Owner 0x6e7F2448a39f2E1FcbC03a3C9Dc30912a206d3F6 at timestamp 1793665633",
+  "signature": "0x97e7259cdc7eb52c31a6f7fb0d73d6eb256b01d7bb61ca066774b30b0d5ca7b628551fd3b1ee369d46c4e47b52d893ad92899906a1e42882c6513558ad6fea9b1b",
+  "timestamp": 1793665633
 }
